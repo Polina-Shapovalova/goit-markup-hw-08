@@ -1,0 +1,43 @@
+.backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 93px 15px;
+    overflow-y: scroll;
+  
+    transition: all 250ms linear;
+
+    &.is-hidden {
+        transition: all 250ms linear 350ms;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    .backdrop {
+        padding: 208px 156px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .backdrop {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.2);
+      
+        transition: all 250ms linear;
+    
+        &.is-hidden {
+            transition: all 250ms linear 350ms;
+        }
+        
+    }
+}
