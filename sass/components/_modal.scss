@@ -1,6 +1,6 @@
     .modal {
         position: absolute;
-        width: 450px;
+        min-width: 450px;
         min-height: 609px;
 
         background-color: #ffffff;
@@ -17,11 +17,11 @@
             transition: transform 250ms linear 0ms;
         }
 
-        @media (min-width:300px) {
+        @media (min-width: 300px) {
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(0.8);
         }
     }
     
@@ -64,7 +64,7 @@
             font-family: var(--main-font);
             font-weight: 700px;
             font-size: 20px;
-            line-height: 1.15;
+            line-height: 1.5;
             text-align: center;
             letter-spacing: 0.03em;
             margin-bottom: 12px;
@@ -127,10 +127,11 @@
         
         
         &-policy-text {
+            white-space: nowrap;
             font-family: var(--main-font);
             font-weight: 400px;
-            font-size: 14px;
-            line-height: 1.714;
+            font-size: 12px;
+            line-height: 1.167;
             letter-spacing: 0.03em;
             
             color: var(--accent-color-secondary);
@@ -194,6 +195,15 @@
     }
     
     .policy-link {
+        font-family: var(--main-font);
+        font-weight: 400px;
+        font-size: 12px;
+        line-height: 1.167;
+        letter-spacing: 0.03em;
+            
+        color: var(--accent-color-secondary);
+        margin-top: 10px;
+        margin-bottom: 30px;
         color: var(--accent-color);
     }
     
